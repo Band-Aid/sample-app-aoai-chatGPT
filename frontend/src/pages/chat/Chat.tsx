@@ -8,6 +8,8 @@ import rehypeRaw from "rehype-raw";
 
 import styles from "./Chat.module.css";
 import Azure from "../../assets/Azure.svg";
+import Pendo from "../../assets/Pendo.svg";
+import Todd from "../../assets/Todd.jpg";
 
 import {
     ChatMessage,
@@ -169,12 +171,12 @@ const Chat = () => {
                         {!lastQuestionRef.current ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={Azure}
+                                    src={Todd}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>Hello Pendozer</h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>Let's talk product.</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">

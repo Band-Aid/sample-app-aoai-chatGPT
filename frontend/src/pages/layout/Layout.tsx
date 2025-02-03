@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 import Azure from "../../assets/Azure.svg";
+import Pendo from "../../assets/Pendo.svg";
+import Todd from "../../assets/Todd.jpg";
 import { CopyRegular, ShareRegular } from "@fluentui/react-icons";
 import { Dialog, Stack, TextField } from "@fluentui/react";
 import { useEffect, useState } from "react";
@@ -37,12 +39,12 @@ const Layout = () => {
                 <div className={styles.headerContainer}>
                     <Stack horizontal verticalAlign="center">
                         <img
-                            src={Azure}
+                            src={Pendo}
                             className={styles.headerIcon}
                             aria-hidden="true"
                         />
                         <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>Azure AI</h1>
+                            <h1 className={styles.headerTitle}>Todd PLG Bott</h1>
                         </Link>
                         <div className={styles.shareButtonContainer} role="button" tabIndex={0} aria-label="Share" onClick={handleShareClick} onKeyDown={e => e.key === "Enter" || e.key === " " ? handleShareClick() : null}>
                             <ShareRegular className={styles.shareButton} />
